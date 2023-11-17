@@ -6,6 +6,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import CardsList from './components/CardsList/CardsList';
 import HomeScreen from './components/HomeScreen';
+import CardsDetails from './components/CardsDetails/CardsDetails';
 
 
 const Stack = createStackNavigator();
@@ -16,6 +17,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="CardsList" component={CardsList} />
+        <Stack.Screen name="CardsDetails" component={CardsDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );
