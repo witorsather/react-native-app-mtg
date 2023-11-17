@@ -19,13 +19,13 @@ Este aplicativo utiliza a API Magic: The Gathering para obter informações de c
 ## Imagens do Aplicativo
 
 ### Tela Inicial
-![Home](utilidades/home.png)
+![Home](utilidades/imagens/home.png)
 
 ### Detalhes da Carta
-![Cards Details](utilidades/cards-details.png)
+![Cards Details](utilidades/imagens/cards-details.png)
 
 ### Lista de Cartas
-![Cards List](utilidades/cards-list.png)
+![Cards List](utilidades/imagens/cards-list.png)
 
 ## Como Instalar e Executar o Projeto
 
