@@ -6,9 +6,9 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>Welcome to Your App!</Text>
+  
       <TouchableOpacity onPress={() => navigation.navigate('CardsList')}>
-        <Text>Go to CardsList</Text>
+        <Text>Lista de Cards</Text>
       </TouchableOpacity>
     </View>
   );
