@@ -1,12 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// Importações necessárias para o React Navigation
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import React from 'react';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import CardsList from './components/CardsList/CardsList';
+import HomeScreen from './components/HomeScreen';
+
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="CardsList" component={CardsList} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
